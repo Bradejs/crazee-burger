@@ -1,30 +1,29 @@
 import { useState } from "react"
 
-export default function LoginPage() {
-  // state 
-  const [inputValue, setInputValue] = useState("")
 
-  // comportement
+export default function LoginForm() {
+// state 
+const [inputValue, setInputValue] = useState("")
+
+// comportement
 const handleSubmit = (event) => { 
-  event.preventDefault()
-  alert(`Bonjour ${inputValue}`)
-  setInputValue("")
- }
+event.preventDefault()
+alert(`Bonjour ${inputValue}`)
+setInputValue("")
+}
 
 const handleChange = (event) => {
-  setInputValue(event.target.value)
+setInputValue(event.target.value)
 }
- 
- // affichage (render)
+
+// affichage (render)
   return (
-    <div>
+      <form action="submit" onSubmit={handleSubmit}>
       <h1>Bienvenue chez nous !</h1>
       <br/>
       <h2>Connectez-vous</h2>
-      <form action="submit" onSubmit={handleSubmit}>
         <input value={inputValue} onChange={handleChange} type="text" placeholder="Entre votre prénom..." required/>
         <button>Accédez a votre espace</button>
       </form>
-    </div>
   )
 }
