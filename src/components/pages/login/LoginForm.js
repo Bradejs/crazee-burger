@@ -25,6 +25,7 @@ setInputValue(event.target.value)
       <h2>Connectez-vous</h2>
         <input value={inputValue} onChange={handleChange} type="text" placeholder="Entre votre prénom..." required/>
        <button>Accédez a votre espace</button> 
+       <Link to="/OrderPage">Vers OrderPage</Link>
       </form>
   )
 }
