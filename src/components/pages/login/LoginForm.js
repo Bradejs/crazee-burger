@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
 export default function LoginForm() {
@@ -8,7 +9,7 @@ const [inputValue, setInputValue] = useState("")
 // comportement
 const handleSubmit = (event) => { 
 event.preventDefault()
-alert(`Bonjour ${inputValue}`)
+// alert(`Bonjour ${inputValue}`)
 setInputValue("")
 }
 
@@ -23,7 +24,7 @@ setInputValue(event.target.value)
       <br/>
       <h2>Connectez-vous</h2>
         <input value={inputValue} onChange={handleChange} type="text" placeholder="Entre votre prénom..." required/>
-        <button>Accédez a votre espace</button>
+       <button>Accédez a votre espace</button> 
       </form>
   )
 }
