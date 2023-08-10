@@ -49,8 +49,7 @@ setInputValue(event.target.value)
   )
 }
 
-const LoginFormStyled = styled.div`
- background: green;
+const LoginFormStyled = styled.form`
  text-align: center;
  max-width: 500px;
  min-width: 400px;
@@ -154,3 +153,7 @@ const LoginFormStyled = styled.div`
 
 
 `
+
+
+
+// REPRISE 35e
