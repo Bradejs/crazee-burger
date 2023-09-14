@@ -2,11 +2,11 @@ import LoginForm from "./LoginForm"
 import { styled } from "styled-components"
 import Logo from "../../reusable-ui/Logo"
 
-export default function LoginPage() {
+export default function LoginPage({ className }) {
   // affichage (render)
   return  (
-          <LoginPageStyled>
-            <Logo/>
+          <LoginPageStyled className={className}>
+            <Logo classname={"logo-login-page"}/>
             <LoginForm />
           </LoginPageStyled>
     )
@@ -33,6 +33,10 @@ align-items: center;
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.logo-login-page {
+  transform: scale(2.5);
 }
 
 `
