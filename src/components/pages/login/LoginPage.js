@@ -2,10 +2,10 @@ import LoginForm from "./LoginForm"
 import { styled } from "styled-components"
 import Logo from "../../reusable-ui/Logo"
 
-export default function LoginPage({ className }) {
+export default function LoginPage() {
   // affichage (render)
   return  (
-          <LoginPageStyled className={className}>
+          <LoginPageStyled>
             <Logo classname={"logo-login-page"}/>
             <LoginForm />
           </LoginPageStyled>

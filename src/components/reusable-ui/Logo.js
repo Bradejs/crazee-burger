@@ -1,7 +1,7 @@
 import styled from "styled-components"
-export default function Logo() {
+export default function Logo({ className }) {
   return (
-    <LogoStyled>
+    <LogoStyled className={className}>
       <h1>CRAZEE</h1> 
       <img src="/images/logo-orange.png" alt="" />
       <h1>BURGER</h1> 
@@ -12,6 +12,7 @@ export default function Logo() {
 const LogoStyled = styled.div`
       display: flex;
       align-items: center;
+     
      
 
       h1 {
