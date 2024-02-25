@@ -34,7 +34,7 @@ const ProfileStyled = styled.div`
     margin-right: 10px;
     p {
       margin: 0;
-      color: ${theme.colors.greyBlue};
+      color: ${theme .colors.greyBlue};
       b {
         color: ${theme.colors.primary};
       }
